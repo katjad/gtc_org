@@ -1,0 +1,55 @@
+{{/* crazyness going on with Hugo making it difficult to conditionally set variables; using Store passed down from page context  */}}
+
+
+
+<div class="mb-7 lg:mb-24 mx-auto lg:mx-0 max-w-[760px] lg:max-w-[1530px] bg-[#1C7B6A14]">
+{{- range $i, $panels:= .block.panels -}}
+	{{ $imgpos := .imagepos }}
+	{{/* $image := $.context.Resources.GetMatch .image */}}
+
+	{{ $.store.Set "imgwidth" "lg:w-[792px]"}}
+	{{ $.store.Set "imgdivwidth" "lg:w-[52%]"}}
+	{{ $.store.Set "textwidth" "lg:w-[760px]" }}
+	{{ $.store.Set "textdivwidth" "lg:w-[48%]" }}
+	{{ $.store.Set "order" "order-first" }}
+
+	{{ if eq $imgpos "right" }}
+		{{ $.store.Set "imgdivwidth" "lg:w-[48%]" }}
+		{{ $.store.Set "textdivwidth" "lg:w-[52%]" }}
+		{{ $.store.Set "order" "order-last" }}
+	{{ end }}
+	{{/* $bgimage := printf "bg-[url('%s')]" $image.RelPermalink */}}
+	{{ $imgdivclass := $.store.Get "imgdivwidth" }}
+	{{ $textdivclass := $.store.Get "textdivwidth" }}
+	{{ $order := $.store.Get "order" }}
+<div class="container-wide">
+	<div class="lg:flex lg:min-h-[600px]">
+		<div class="py-12 flex flex-col items-center justify-center {{ $textdivclass }} px-4 lg:px-7 2xl:px-[145px] text-bodymcs font-secondary">
+			{{ if .heading }}
+			<h3 class="self-start text-3xl text-greenmcs font-primary mb-7">{{ .heading }}</h3>
+			{{ end }}
+
+			<div class="article panel">	
+			{{ .content | markdownify }}
+			</div>
+
+			{{ if .buttontext }}
+			<div class="self-start py-4">
+				<button class="btn btn-primary">
+					<a href="{{ .buttonlink }}">{{ .buttontext }}</a>
+				</button>
+			</div>
+			{{ end }}
+		</div> 
+
+		<div 
+		 class="{{ $order }} {{ $imgdivclass }} min-h-[450px] {{/* $bgimage */}}"{{ partial "bg-image" (dict 
+			"Src" .image
+			) | safeHTMLAttr
+			}} 
+		>
+		</div>
+	</div>
+</div>
+{{- end -}}
+</div>

@@ -1,0 +1,26 @@
+<div class="container-slim mt-6">
+   {{ with $fragment := .Params.fragment }}
+      <div class="context pb-7 mb-5 px-3 text-fragment">
+         {{ $fragment | markdownify }}
+      </div>
+   {{ end }}
+     
+   {{ partial "articleparts/author-line" . }}
+
+   {{ with $image := .Params.image }}
+   {{ $title := $.Title }}
+      <div class="mx-auto mb-4 lg:mb-12 max-w-[570px] ">
+         {{ partial "image" ( dict
+            "Src" $image
+            "Alt" $title
+            "Class" "mx-auto"
+         ) }}
+      </div>
+   {{ end }}
+
+   {{ with $context := .Params.context }}
+      <div class="context mb-12 text-left text-fragment font-bold">
+         {{ $context | markdownify }}           
+      </div>
+   {{ end }}
+</div>

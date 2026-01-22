@@ -1,0 +1,24 @@
+<div class="container-wide mb-4 lg:mb-12 xl:mb-24">
+	{{ $images := .block.images }}
+
+	<div class="mx-auto flex flex-wrap justify-center gap-4">
+	{{ range $images }}
+		<div class="mb-2 h-[400px]">
+		{{/* <img src="" alt="gallery image" class="sm:h-[400px]"> */}}
+			{{ $image := . }}
+			{{ partial "image" (dict
+				"Src" $image
+				"Alt" "Gallery image"
+				"Size" "465x400"
+			) }}
+		</div>
+	{{ end }}
+
+	{{ with $caption :=.block.caption }}
+	<div class="container-slim text-modelcard text-center font-secondary">
+	  {{ $caption | markdownify }}
+	 </div>
+	{{ end }}
+
+	</div>
+</div>

@@ -1,0 +1,22 @@
+{{ $image := .image }}
+{{ $maxwidth := .maxwidth }}
+<div class="container-slim font-secondary">
+	<div class="mx-auto mb-4">
+	{{ if $maxwidth }}
+		{{ $width := (printf "md:w-[%s]" $maxwidth) }}
+		{{ $class := (printf "mx-auto md:w-[%s]" $maxwidth) }}
+		{{ partial "image" ( dict
+			"Src" $image
+			"Alt" $image
+			"Class" $class
+			"Width" $width
+		) }}
+	{{ else }}
+		{{ partial "image" ( dict
+			"Src" $image
+			"Alt" $image			
+		) }}
+	{{ end }}
+	</div>
+	{{ .content | markdownify }}
+</div>

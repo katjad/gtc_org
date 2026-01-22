@@ -1,0 +1,4 @@
+{{ $image := .block.image }}
+{{ with $maxwidth := $.block.maxwidth }}
+	{{ partial "image" (dict "Src" .image "Alt" "feature image" "Class" $maxwidth) }}
+{{ end }}

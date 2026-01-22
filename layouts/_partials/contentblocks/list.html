@@ -1,0 +1,27 @@
+{{ $context := . }}
+{{- if .Params.contentblocks -}}
+<section>
+	<div class="container-wide">
+	 	{{- range .Params.contentblocks -}}	
+			{{ if eq .kind "block" }}
+				{{ $template := printf "blocks/templates/%s.html" .template }}
+				{{ partial $template (dict
+					"block" .
+					"context" $context
+					"store" $.Store
+				)}}
+			{{- else if (eq .kind "heading") -}}
+			<div class="container mb-4 lg:mb-12">
+				{{ if eq .alignment "center" }}
+				<div class="text-center">
+				{{- end -}}
+				<h2 class="text-4xl text-[#787878] font-secondary tracking-wider">{{ .title }}</h2>
+				{{ if eq .alignment "center" }}
+				</div>
+				{{- end -}}
+			</div>
+			{{- end -}}
+		{{- end -}}
+	</div>
+</section>
+{{- end -}}

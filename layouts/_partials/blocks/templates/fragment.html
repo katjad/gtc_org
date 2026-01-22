@@ -1,0 +1,13 @@
+<div class="container-slim mb-4 lg:mb-24 px-7 text-center">
+	<div class="text-fragment font-secondary">
+		{{ .block.content }}
+	</div>	
+	{{ $buttontext := .block.buttontext }}
+	{{ if $buttontext }}
+	<div class="py-4 lg:py-12">
+		<button class="btn  btn-primary">
+			<a href="{{ .block.buttonlink }}">{{ $buttontext }}</a>
+		</button>
+	</div>
+	{{ end }}
+</div>

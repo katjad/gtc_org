@@ -1,0 +1,28 @@
+{{ define "main" }}
+   {{ partial "page-header" . }}
+
+  <!-- <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-8">
+          {{ if .Params.image }}
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto rounded mb-6" ) }}
+          {{ end }}
+          
+          <div class="content">{{ .Content }}</div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+      
+        <div class="text-center">
+
+        {{ partial "contentblocks/list" . }}
+
+        </div>
+    </div>
+  </section>
+  
+{{ end }}

@@ -1,0 +1,44 @@
+<section class="container mb-9 lg:mb-24">
+    <h2 class="text-center text-h3 py-5 mb-5 lg:mb-9 text-greenmcs font-primary">Articles on {{ .Title }}</h2>
+
+    <div class="md:flex md:flex-wrap  md:gap-5 xl:gap-9 md:justify-center">
+
+    {{- range where .Site.RegularPages ".Params.categories" "intersect" (slice .Title) -}}
+      
+      {{ partial "components/rel-article-card" . }}
+
+    {{- end -}}
+
+
+    
+      {{- range where .Site.RegularPages ".Params.tags" "intersect" (slice .Title) -}}
+      <div class="mx-auto my-7 md:mx-0 md:my-0 md:flex-none w-[310px] sm:w-[350px] min-h-[610px] sm:px-5 py-7 relative border-2 border-solid border-[#FACB43]/80 rounded-lg bg-[#FACB43CC]">
+
+        {{ $image:= .Params.smallimage }}
+        {{ partial "image" (dict "Src" $image "Class" "absolute w-[300x] mx-auto top-7 left-0 right-0 border-solid border-white rounded-md") }}
+
+        <div class="item-contents absolute top-[310px] left-5 right-5 ">
+          <h3 class="px-0.5 text-h3 text-greenmcs font-primary font-normal"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+
+          {{ $author:= .Params.author }}
+          {{ if $author }}
+            <div class="px-0.5 mb-7">
+            {{ $authimage:= .Params.authorimage }}
+            {{ if $authimage }}
+                <!-- author image -->
+                {{ partial "image" (dict "Src" "/images/cropped_author.jpg" "Context" .Page "Alt" .Title "Class" "inline h-5 w-5 mr-2 border-solid border-white rounded-2xl") }}
+                {{ end }}
+
+              <a class="text-modelcard" href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">{{ $author }}</a>
+            </div>
+            {{ end }}
+            <div class="px-0.5">
+              {{ .Params.content | markdownify }}
+
+            </div>
+          </div>
+        </div>
+
+      {{- end -}}
+    </div>
+  </section>

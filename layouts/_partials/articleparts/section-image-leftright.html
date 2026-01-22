@@ -1,0 +1,43 @@
+{{ $left := (eq .imagepos "left")}}
+{{ $image := .image }}
+{{ $maxwidth := .maxwidth }}
+
+<div class="container-small">
+	<div class="mx-auto md:flex {{ if $left }} md:flex-row {{ else }} md:flex-row-reverse {{ end }} md:gap-5 justify-between place-content-between">	
+		<div class="
+		{{- if $maxwidth -}}
+		md:w-[{{ $maxwidth }}] 
+		{{ else }}
+		md:w-1/2 
+		{{ end }}
+		md:flex-shrink py-1">
+
+		{{ if $maxwidth }}
+			{{ $width := (printf "md:w-[%s]" $maxwidth) }}
+			{{ partial "image" ( dict
+				"Src" $image
+				"Alt" $image
+				"Class" $width
+				"Width" $width
+			) }}
+		{{ else }}
+			{{ partial "image" ( dict
+				"Src" $image
+				"Alt" $image
+				"Class" "md:w-1/2"
+			) }}
+		{{ end }}
+
+
+			{{/*<img src="{{ .image }}" alt="{{ .image }}" 
+			class="			
+			{{ with $maxwidth := .maxwidth }}
+				{{ $maxwidth }}
+			{{ end }} 
+			"> */}}
+		</div>
+		<div class="md:w-1/2 md:flex-1 py-1 font-secondary">
+			{{ .content | markdownify }}
+		</div>
+	</div>
+</div>

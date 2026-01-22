@@ -1,0 +1,41 @@
+{{ $title := .block.title | markdownify }}
+
+{{/** check if there's children blocks **/}}
+{{ if $blocks := .block.contentblocks }}
+	
+<div class="accordion">
+  <button class="accordion-header container-slim flex flex-row-reverse justify-end gap-2 bg-white text-3xl text-greenmcs py-4" data-accordion>
+    {{ $title }}
+    <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+      <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+    </svg>
+  </button>
+ <div class="accordion-content bg-white text-left">
+ 	{{/** beware cannot use image panel here, I think **/}}
+ 	{{ $context := $.context }}
+    {{ range $blocks }}
+    	{{ if eq .kind "block" }}
+			{{ $template := printf "blocks/templates/%s.html" .template }}
+			{{ partial $template (dict
+				"block" .
+				"context" $context
+			)}}
+		{{- else if (eq .kind "heading") -}}
+		<div class="container mb-4 xl:mb-12">
+			<h2 class="text-h3 text-greenmcs font-primary">{{ .title }}</h2>
+		</div>
+		{{- end -}}
+    {{ end }}
+ </div>
+</div>
+
+{{ else }}
+	{{ $content := .block.content | markdownify }}
+	{{ partial "accordion" (dict
+		"Title" $title
+		"Content" $content
+		"Class" "bg-white"
+		"HeaderClass" "container-slim flex flex-row-reverse justify-end gap-2 bg-white text-3xl text-greenmcs"
+		"BodyClass" "container-slim bg-white text-left font-secondary"
+	) }}
+{{ end }}

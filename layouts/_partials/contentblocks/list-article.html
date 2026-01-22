@@ -1,0 +1,15 @@
+{{ $context := . }}
+{{- if .Params.contentblocks -}}
+
+ 	{{- range .Params.contentblocks -}}	
+ 		{{ if eq .kind "block" }}
+			{{ $template := printf "blocks/templates/%s.html" .template }}
+			{{ partial $template (dict
+				"block" .
+				"context" $context
+				"store" $.Store
+			)}}
+		{{- end -}}
+	{{- end -}}
+
+{{- end -}}

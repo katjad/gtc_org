@@ -1,0 +1,11 @@
+{{- $pos := .imagepos -}}  {{/** does not through an error if no .imagepos in content block! **/}}
+{{- $wide := or (eq $pos "left") (eq $pos "right") -}}
+
+{{- with $heading := .title -}}
+	 <div class="
+	 {{- if $wide  -}}container-small{{- else -}}
+	 container-slim{{- end -}}
+	 ">
+		 <h3 class="py-4 text-greenmcs text-articleheading font-primary">{{ $heading }}</h3>
+	 </div>
+{{- end -}}

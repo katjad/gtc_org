@@ -1,0 +1,11 @@
+<div class="flex flex-wrap justify-center pb-12">
+  {{ range $i, $p := .Params.tags }}
+  {{ if $i }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;{{ end }}
+    <a
+        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/"
+        class="ms-1"
+        >
+        {{ . | humanize }} 
+    </a>
+  {{end}} 
+</div>

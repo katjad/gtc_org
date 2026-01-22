@@ -1,0 +1,30 @@
+<div class="md:w-[760px] lg:w-auto mx-auto lg:flex mb-4 xl:mb-24">
+
+	<div class="lg:w-[775px] flex flex-col items-center justify-center px-7 2xl:pl-[145px] 2xl:pr-[45px] ">
+		{{ $heading := .block.heading }}
+		{{ if $heading }}
+		<div class="self-start mb-4 lg:mb-7">
+			<h3 class="text-3xl text-greenmcs font-primary">{{ $heading | markdownify }}</h3>
+		</div>
+		{{ end }}
+
+		<div class="article panel text-bodymcs font-secondary">
+		{{ .block.content | markdownify }}
+		</div>		
+	</div>
+
+	<div class="lg:w-[775px] py-4 flex flex-col items-center justify-center pl-4 lg:pl-7 2xl:pl-[60px] min-h-[420px]">
+
+		<div class="bg-[#1C7B6A] p-4 lg:p-7 xl:p-[95px]">
+			{{ $headingbox := .block.headingbox }}
+			{{ if $headingbox }}
+			<h4 class="self-start text-articleheading tracking-widest font-primary mb-7 text-white uppercase">{{ $headingbox | markdownify }}</h4>
+			{{ end }}
+			<div class="linkunderline text-white text-homepagebox font-primary">
+			{{ .block.contentbox | markdownify }}
+			</div>
+		</div>
+
+	</div>
+
+</div>

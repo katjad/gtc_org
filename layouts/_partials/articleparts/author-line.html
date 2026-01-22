@@ -1,0 +1,19 @@
+{{ $t := time.AsTime .Params.date }}
+{{ with $author:= .Params.author }}
+   <div class="mb-12">
+      {{ with $authorimage := $.Params.authorimage }}
+      {{ partial "image" (dict
+         "Src" $authorimage
+         "Alt" "Author image"
+         "Size" "20x20"
+         "Class" "inline mb-2 mr-2 rounded-2xl"
+      ) }}
+      <!-- <img src="/images/cropped_author.jpg" alt="author image" class="inline h-5 w-5 mr-2 border-solid border-white rounded-2xl" /> -->
+      {{ end }}
+      <a href="{{ `authors/` | relLangURL }}{{ $author | urlize }}/">{{ $author }}</a>,
+      {{ time.Format "2 Jan 2006" $t }},
+      {{ with $readingtime :=  $.Params.readingtime }}
+      <span class="font-bold">{{ $readingtime }}</span>
+      {{ end }}
+   </div>
+{{ end }}

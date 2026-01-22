@@ -1,0 +1,60 @@
+	<section class="mb-9 lg:mb-24">
+        <div class="container-wide">
+          <div class="row">
+            <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
+              <h2 class="mt-4 mb-2 lg:mb-7 text-h3 font-primary text-greenmcs">
+                Examples
+              </h2>
+            </div>
+
+            <div class="col-12">
+            	<div class="swiper example-slider">
+            		<div class="swiper-wrapper">
+            		{{ range .Params.examples }}
+
+            		{{/* had images in examples folder, and also md page, it did work and then stopped working.. */}}
+
+            		{{/* $imgpath := printf "examples/%s" .image */}}
+            	
+            		{{/* $img := $.context.Resources.Get $imgpath */}}
+       	
+            		<div class="swiper-slide">
+            			<div class="container-wide">
+									<div class="md:w-[760px] lg:w-auto mx-auto lg:flex">
+
+										<div class="lg:w-[775px]">
+											<img src="{{ .image }}" alt="example image">
+										</div>
+
+
+										<div class="lg:w-[775px] py-2 flex flex-col items-center justify-center px-4 lg:px-7 2xl:px-[60px] bg-[#FC9A30CC]  text-bodymcs">
+											{{ if .heading }}
+											<h3 class="self-start text-3xl font-primary mb-7">{{ .heading | markdownify }}</h3>
+											{{ end }}
+											<div class="article panel font-secondary">
+											{{ .content | markdownify }}
+											</div>
+											<div class="mt-7">
+											{{ if .buttontext }}
+											<button class="btn btn-dark-outline text-bodymcs hover:text-white"><a href="">
+												{{ .buttontext }}
+											</a></button>
+											</div>
+											{{ end }}
+										</div>
+
+							</div>
+						</div>
+					</div>
+
+					{{ end }}
+            		</div>	
+            		<div class="example-slider-pagination mt-9 flex items-center justify-center text-center">
+            		</div>	
+
+            	</div>
+
+            </div>
+          </div>
+        </div>
+    </section>

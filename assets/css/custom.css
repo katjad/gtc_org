@@ -1,1 +1,24 @@
 /* Add your own custom styles here */
+
+/*@import "tailwindcss";*/
+
+
+.nav-item { margin-left: 15px; margin-right: 15px; font-family: Marcellus;text-transform: uppercase; letter-spacing: 0.5px; font-size: 21px}
+.nav-link {color: #728b55}
+
+.container-slim {
+  @apply mx-auto px-4 md:max-w-[760px];
+}
+
+.marcellus-regular {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: "atkinson-hyperlegible";
+  src: url('../fonts/AtkinsonHyperlegible/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'), url('../fonts/AtkinsonHyperlegible/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}*/

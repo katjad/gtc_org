@@ -1,0 +1,55 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="md:col-10 lg:col-6 mx-auto">
+          <form action="{{ site.Params.contact_form_action }}" method="POST" class="kf-form">
+            <div class="mb-6">
+              <label for="name" class="form-label">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Name"
+                type="text" 
+                rules="required|max:255"
+                />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="form-label">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="Email"
+                type="email" 
+                rules="required|max:255"
+                />
+            </div>
+            <div class="mb-6">
+              <label for="message" class="form-label">
+                Your message <span class="text-red-500">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                placeholder="Message goes here..."
+                rules="required|max:800"
+                rows="8"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{{ end }}

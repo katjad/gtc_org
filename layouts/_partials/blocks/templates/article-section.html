@@ -1,0 +1,35 @@
+<div class="mb-4 mt-4 text-left text-article">
+
+    {{ $block := .block }}
+
+    {{ if .block.title }}
+
+        {{ partial "articleparts/section-heading" $block }}
+    {{ end }}
+
+    {{ with $image := .block.image }}
+
+        {{ with $imagepos := $.block.imagepos }}
+            {{ if or (eq $imagepos "left") (eq $imagepos "right") }}
+                {{ partial "articleparts/section-image-leftright" $block }}
+
+            {{ else if eq $imagepos "bottom" }}
+
+                {{ partial "articleparts/section-image-bottom" $block }}
+
+            {{ else }}
+            
+                {{ partial "articleparts/section-image-top" $block }}
+
+            {{ end }}
+        {{ else }}
+            {{ partial "articleparts/section-image-top" $block }}
+        {{ end }}
+
+    {{ else }}
+        <div class="container-slim text-xl">
+        {{ .block.content | markdownify }}
+        </div>
+    {{ end }}
+
+</div>
