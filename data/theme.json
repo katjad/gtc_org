@@ -12,9 +12,10 @@
         "text": "#444444",
         "text_dark": "#040404",
         "text_light": "#787878",
-        "text_greenmcs": "#a2b789",
+        "text_green": "#728B55",
         "text_blue": "#0090ca",
-        "text_darkred": "#cc607d"
+        "text_darkred": "#cc607d",
+        "text_darkgreen": "#576f3b"
       }
     },
     "darkmode": {

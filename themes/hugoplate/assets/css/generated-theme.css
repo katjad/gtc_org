@@ -14,9 +14,10 @@
   --color-text: #444444;
   --color-text-dark: #040404;
   --color-text-light: #787878;
-  --color-text-greenmcs: #a2b789;
+  --color-text-green: #728B55;
   --color-text-blue: #0090ca;
   --color-text-darkred: #cc607d;
+  --color-text-darkgreen: #576f3b;
 
   /* === Darkmode Colors === */
   --color-darkmode-primary: #fff;

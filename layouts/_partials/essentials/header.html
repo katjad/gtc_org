@@ -85,7 +85,7 @@
         {{ else }}
           <li class="nav-item">
             <a
-              class="nav-link font-normal text-2xl text-[cc607d] {{ if $active }}active{{- end -}}"
+              class="nav-link font-normal text-2xl text-text-darkgreen {{ if $active }}active{{- end -}}"
               {{ if findRE `^http` .URL }}
                 target="_blank" rel="noopener"
               {{ end }}
