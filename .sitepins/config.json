@@ -1,8 +1,15 @@
 {
-  "content": "content/english",
-  "media": "assets/images",
-  "public": "static",
-  "configs": [
+  "media": {
+    "root": "assets/images",
+    "public": "assets"
+  },
+  "content": {
+    "root": "content/english"
+  },
+  "code": {
+    "root": "layouts"
+  },
+  "themeConfig": [
     "config/_default",
     "hugo.toml",
     "data"

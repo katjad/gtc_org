@@ -12,7 +12,9 @@
         "text": "#444444",
         "text_dark": "#040404",
         "text_light": "#787878",
-        "text_greenmcs": "#a2b789"
+        "text_greenmcs": "#a2b789",
+        "text_blue": "#0090ca",
+        "text_darkred": "#cc607d"
       }
     },
     "darkmode": {
@@ -34,8 +36,8 @@
     "font_family": {
       "primary": "Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700",
       "primary_type": "sans-serif",
-      "secondary": "Marcellus",
-      "secondary_type": "sans-serif"
+      "secondary": "Andada+Pro:ital,wght@0,600;1,600",
+      "secondary_type": "serif"
     },
     "font_size": {
       "base": "16",

@@ -3,7 +3,7 @@
 /*@import "tailwindcss";*/
 
 
-.nav-item { margin-left: 15px; margin-right: 15px; font-family: Marcellus;text-transform: uppercase; letter-spacing: 0.5px; font-size: 21px}
+.nav-item { margin-left: 15px; margin-right: 15px; letter-spacing: 0.5px;  font-weight: normal;font-size: 21px}
 .nav-link {color: #728b55}
 
 .container-slim {
@@ -12,6 +12,18 @@
 
 .marcellus-regular {
   font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.andada {
+  font-family: "Andada", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson {
+  font-family: "atkinson-hyperlegible", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
