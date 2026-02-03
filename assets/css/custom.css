@@ -1,15 +1,24 @@
 /* Add your own custom styles here */
 
 /*@import "tailwindcss";*/
-p a {
-  color: #0090ca;
+p a, .project-box a {
+  /*color: #0090ca;*/
+  color: #0091a3;
+  border-bottom: 1px dashed #0091a3;
+}
+
+.project-box  a{
+  color: #c16c55;
+  border-bottom: 1px dashed #c16c55
+  /*text-decoration: underline;*/
 }
 
 p a:hover {
-  text-decoration: underline;
-  /*text-decoration-line: underline;
-  text-decoration-style: dashed;
-  text-decoration-color: #0090ca;*/
+  border-bottom: 3px solid #0091a3;
+}
+
+.project-box  a:hover {
+  border-bottom: 3px solid #c16c55;
 }
 
 main {min-height: 80vh}
@@ -27,8 +36,6 @@ main {min-height: 80vh}
   border-radius: 10px;
 }
 
-
-
 .container-slim {
   @apply mx-auto px-4 md:max-w-[760px];
 }
@@ -36,6 +43,23 @@ main {min-height: 80vh}
 .container-800 {
    @apply mx-auto px-4 md:max-w-[800px];
 }
+
+.container-small {
+  @apply mx-auto px-4 md:max-w-[760px] lg:max-w-[960px];
+}
+
+.container {
+  @apply mx-auto px-4 md:max-w-[760px] lg:max-w-[960px] 2xl:max-w-[1200px];
+}
+
+.cotainer-mid {
+   @apply mx-auto px-4 md:max-w-[760px] lg:max-w-[960px]  2xl:max-w-[1360px];
+}
+
+.container-wide {
+  @apply mx-auto md:max-w-[760px] lg:max-w-[960px]  2xl:max-w-[1530px];
+}
+
 
 .marcellus-regular {
   font-family: "Marcellus", serif;

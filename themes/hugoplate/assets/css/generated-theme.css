@@ -14,14 +14,21 @@
   --color-text: #444444;
   --color-text-dark: #040404;
   --color-text-light: #787878;
+  --color-text-brown: #555;
   --color-text-green: #728B55;
   --color-text-blue: #0090ca;
   --color-text-darkred: #cc607d;
   --color-text-darkgreen: #576f3b;
+  --color-text-lightgreen: #e6f6d1;
   --color-text-classy-grey: #42493a;
   --color-text-classy-lightgrey: #a6ae9c;
   --color-text-classy-aquamarine: #0091a3;
   --color-text-classy-darkgreenyblue: #005e6f;
+  --color-text-skip-orange: #e8995b;
+  --color-text-skip-lightorange: #ffd08f;
+  --color-text-skip-brown: #ac662a;
+  --color-text-squash-blue: #008ad2;
+  --color-text-squash-orange: #c16c55;
 
   /* === Darkmode Colors === */
   --color-darkmode-primary: #fff;

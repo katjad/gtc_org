@@ -12,14 +12,21 @@
         "text": "#444444",
         "text_dark": "#040404",
         "text_light": "#787878",
+        "text_brown": "#555",
         "text_green": "#728B55",
         "text_blue": "#0090ca",
         "text_darkred": "#cc607d",
         "text_darkgreen": "#576f3b",
+        "text_lightgreen": "#e6f6d1",
         "text_classy_grey": "#42493a",
         "text_classy_lightgrey": "#a6ae9c",
         "text_classy_aquamarine": "#0091a3",
-        "text_classy_darkgreenyblue": "#005e6f"
+        "text_classy_darkgreenyblue": "#005e6f",
+        "text_skip_orange": "#e8995b",
+        "text_skip_lightorange": "#ffd08f",
+        "text_skip_brown": "#ac662a",
+        "text_squash_blue": "#008ad2",
+        "text_squash_orange": "#c16c55"
       }
     },
     "darkmode": {
