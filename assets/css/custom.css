@@ -1,20 +1,40 @@
 /* Add your own custom styles here */
 
 /*@import "tailwindcss";*/
-a:link {
+p a {
   color: #0090ca;
 }
 
-a:hover {
-  /*background: #abffff;
-  border-radius: 5px;*/
+p a:hover {
   text-decoration: underline;
+  /*text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #0090ca;*/
 }
 
-.nav-item { margin-left: 15px; margin-right: 15px; letter-spacing: 0.5px;  font-weight: normal;font-size: 21px}
+main {min-height: 80vh}
+
+.nav-item { 
+  margin-left: 15px; 
+  margin-right: 15px; 
+  letter-spacing: 0.5px;  
+  font-weight: normal; 
+  font-size: 21px
+}
+
+.nav-item:hover {
+  background: #e6f6d1;
+  border-radius: 10px;
+}
+
+
 
 .container-slim {
   @apply mx-auto px-4 md:max-w-[760px];
+}
+
+.container-800 {
+   @apply mx-auto px-4 md:max-w-[800px];
 }
 
 .marcellus-regular {
@@ -34,6 +54,7 @@ a:hover {
   font-weight: 400;
   font-style: normal;
 }
+
 
 /*@font-face {
   font-family: "atkinson-hyperlegible";

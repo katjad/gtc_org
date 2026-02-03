@@ -15,7 +15,11 @@
         "text_green": "#728B55",
         "text_blue": "#0090ca",
         "text_darkred": "#cc607d",
-        "text_darkgreen": "#576f3b"
+        "text_darkgreen": "#576f3b",
+        "text_classy_grey": "#42493a",
+        "text_classy_lightgrey": "#a6ae9c",
+        "text_classy_aquamarine": "#0091a3",
+        "text_classy_darkgreenyblue": "#005e6f"
       }
     },
     "darkmode": {
@@ -38,7 +42,9 @@
       "primary": "Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700",
       "primary_type": "sans-serif",
       "secondary": "Andada+Pro:ital,wght@0,600;1,600",
-      "secondary_type": "serif"
+      "secondary_type": "serif",
+      "lowimpact": "Nunito:ital,wght@0,200..1000;1,200..1000",
+      "lowimpact_type": "sans-serif"
     },
     "font_size": {
       "base": "16",

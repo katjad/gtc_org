@@ -20,7 +20,7 @@ contentblocks:
       
       
       
-      We recently started three online projects playing together to form an ecosystem: the [blog](https://growingcommons.substack.com/) for connecting with kindred spirits, the [forum](https://forum.growingthecommons.org/) for discussing, and the [wiki](https://knowledge.growingthecommons.org/) for curating knowledge (with no strict separation of course, all of them are for connecting people).   
+       
 
 
 

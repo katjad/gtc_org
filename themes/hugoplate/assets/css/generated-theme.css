@@ -18,6 +18,10 @@
   --color-text-blue: #0090ca;
   --color-text-darkred: #cc607d;
   --color-text-darkgreen: #576f3b;
+  --color-text-classy-grey: #42493a;
+  --color-text-classy-lightgrey: #a6ae9c;
+  --color-text-classy-aquamarine: #0091a3;
+  --color-text-classy-darkgreenyblue: #005e6f;
 
   /* === Darkmode Colors === */
   --color-darkmode-primary: #fff;
@@ -32,6 +36,7 @@
   /* === Font Families === */
   --font-primary: Atkinson Hyperlegible, sans-serif;
   --font-secondary: Andada Pro, serif;
+  --font-lowimpact: Nunito, sans-serif;
 
   /* === Font Sizes === */
   --text-base: 16px;
