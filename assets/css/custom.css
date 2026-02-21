@@ -1,7 +1,7 @@
 /* Add your own custom styles here */
 
 /*@import "tailwindcss";*/
-p a, .project-box a {
+p a, .project-box a, .article-part ul a, .article-part ol a {
   /*color: #0090ca;*/
   color: #0091a3;
   border-bottom: 1px dashed #0091a3;
@@ -10,10 +10,9 @@ p a, .project-box a {
 .project-box  a{
   color: #c16c55;
   border-bottom: 1px dashed #c16c55
-  /*text-decoration: underline;*/
 }
 
-p a:hover {
+p a:hover, .article-part ul a:hover, .article-part ol a:hover{
   border-bottom: 3px solid #0091a3;
 }
 
@@ -21,14 +20,37 @@ p a:hover {
   border-bottom: 3px solid #c16c55;
 }
 
+ul {
+  list-style: disc;
+}
+
+ul li {
+  padding-bottom: 0.5em;
+}
+
+ol {
+  list-style: decimal;
+  list-style-position: outside;
+}
+
+.article-part ul li, .article-part ol li {
+  margin-left: 1.5em;
+  padding-bottom: 0.5em;
+}
+
 main {padding: 0 8px; min-height: 80vh}
 
-.nav-item { 
+li.nav-item { 
   margin-left: 15px; 
   margin-right: 15px; 
   letter-spacing: 0.5px;  
   font-weight: normal; 
-  font-size: 21px
+  font-size: 21px;
+  list-style-type: none;
+}
+
+li.nav-item a {
+
 }
 
 .nav-item:hover {

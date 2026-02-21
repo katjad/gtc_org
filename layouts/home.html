@@ -49,7 +49,30 @@
 
   <!-- Three projects -->
 
-    <section class="mt-8">
+  <div class="container">
+    <div class="mx-auto md:w-full md:flex"> 
+
+      <div class="mb-7 px-2 md:flex-1 md:w-1/3">
+        <a href="https://knowledge.growingthecommons.org">{{ partial "image" (dict "Src" .Params.image2 "Alt" "knowdledge commons" "Loading" "eager" "Class" "px-3 py-2") }}</a>
+      </div>
+
+      <div class="mb-7 px-3 md:flex-1 md:w-1/3">
+        <a href="https://growingcommons.substack.com">
+                {{ partial "image" (dict "Src" .Params.image1 "Alt" "substack post" "Loading" "eager" "Class" "px-3 py-2") }}
+              </a>
+      </div>
+
+      <div class="px-3 md:flex-1 md:w-1/3">
+         <a href="https://forum.growingthecommons.org">
+                {{ partial "image" (dict "Src" .Params.image3 "Alt" "forum" "Loading" "eager" "Class" "px-3 py-2") }}
+              </a>
+      </div>
+
+    </div>
+  </div>
+
+
+    {{/* <section class="mt-8">
       <div class="
       container-slim
       px-[15px]
@@ -146,7 +169,7 @@
 
           </div> -->
       </div>
-    </section>
+    </section> */}}
  
 
 
