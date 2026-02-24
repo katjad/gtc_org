@@ -3,6 +3,7 @@ title: "Home"
 image1: /images/blogpost.jpg
 image2: /images/wiki.jpg
 image3: /images/forum.jpg
+logo1: /images/LL-Logo-long-green.svg
 
 contentblocks:
   - kind: heading

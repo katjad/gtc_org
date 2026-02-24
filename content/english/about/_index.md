@@ -16,7 +16,7 @@ contentblocks:
       Growing the Commons is a collaboration of individuals from organisations that are developing tools, ideas and practices to grow the commons movement. It’s a **‘knowledge commons’** – a global resource, owned and governed by practitioners, comprising:
       
             
-        1. a [**knowledge base**](https://knowledge.growingthecommons.org), with (currently) 250 topics around commoning and household provisioning (that we consider ‘micro-commoning’), looked after by specialist curators, who will add new topics. Browse, or use the search facility for a specific topic. 
+        1. a **knowledge base**, with (currently) [250 topics](https://knowledge.growingthecommons.org/doku.php/ints/start) around commoning and household provisioning (that we consider ‘micro-commoning’), looked after by specialist curators, who will add new topics. Browse, or use the search facility for a specific topic. 
         2. a [**blog**](https://growingcommons.substack.com), with news, projects and opinions. Please [subscribe](https://growingcommons.substack.com/about). 
         3. a [**forum**](https://forum.growingthecommons.org) for comments, discussion and queries. Please register and say hello.
         <br />&nbsp;<br />
@@ -60,6 +60,12 @@ contentblocks:
       
        <br />&nbsp;<br />
 
+  - kind: block    
+    template: article-section
+    content: >-
+        [Contact us](/contact) if you'd like to contribute. 
+
+         <br />&nbsp;<br />
     
 ---
 

@@ -34,7 +34,7 @@ ol {
 }
 
 .article-part ul li, .article-part ol li {
-  margin-left: 1.5em;
+  margin-left: 1em;
   padding-bottom: 0.5em;
 }
 
@@ -69,6 +69,10 @@ li.nav-item a {
 
 .container-small {
   @apply mx-auto px-4 md:max-w-[760px] lg:max-w-[960px];
+}
+
+.container-smallish {
+  @apply mx-auto px-4 md:max-w-[760px] lg:max-w-[960px] 2xl:max-w-[1100px];
 }
 
 .container {
