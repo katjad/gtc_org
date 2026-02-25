@@ -54,7 +54,7 @@ contentblocks:
   - kind: block
     template: article-section
     content: >-
-       - **Substack editorial team**: Dave Darby, Katja Durrani, Simon Grant, Otto Hague, Michel Rauchs
+       - **Substack editorial team**: Dave Darby, Katja Durrani, Otto Hague, Michel Rauchs
        
        - **Knowledge base (wiki)**: Dave Darby, Katja Durrani, Simon Grant, Dil Green, Otto Hague
       

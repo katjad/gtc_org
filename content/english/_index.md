@@ -7,7 +7,7 @@ logo1: /images/LL-Logo-long-green.svg
 
 contentblocks:
   - kind: heading
-    title: "Growing a Knowledge Commons"
+    title: "Growing the Commons"
   - kind: block
     template: article-section
     content: >-
