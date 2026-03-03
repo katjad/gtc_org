@@ -32,7 +32,7 @@ logos:
     - name: Commons Lab
       image: "/images/logo_commonslab_s.png"
       size: "232x75"
-      link: "htps://commonslab.org.uk"
+      link: "https://commonslab.org.uk"
     - name: Credit Commons Society
       image: "/images/logo_cc_s.png"
       size: "165x80"
