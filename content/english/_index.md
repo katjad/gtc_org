@@ -11,5 +11,7 @@ contentblocks:
     template: article-section
     content: >-
       Growing the Commons exists to promote, support, and strengthen the Commons: a diverse ecosystem of community-driven systems, tools, and practices for producing, governing, and sustaining life’s essentials. **Read more** on our [About](/about) page.
+
+       <!-- to make the above a paragraph… -->
        
 ---
