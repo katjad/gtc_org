@@ -215,7 +215,17 @@
       </div>
     </section> */}}
  
+  {{ with site.GetPage "sections/homepage_logos" }}
 
+  <section class="container-smallish pb-8">
+    <div class="flex flex-wrap justify-center items-center">
+    {{ range $i, $e:= .Params.logos }}
+      {{ partial "image" (dict "Src" .image "Alt" .name "Size" .size "Class" "mx-3 mt-8") }}
+    {{ end }}
+    </div>
+  </section>
+
+  {{ end }}
 
 
   <!-- Features -->
