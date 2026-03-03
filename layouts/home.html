@@ -111,10 +111,6 @@
     </div>
   </section>
 
- {{/* <section class="container-smallish flex center">
-    {{ partial "image" (dict "Src" .Params.logo1 "Alt" "Localloop" "Size" "200x51" "Loading" "eager" "Class" "px-3 py-2 bg-[#470f8a]") }}
-
-  </section> */}}
 
     {{/* <section class="mt-8">
       <div class="
@@ -217,10 +213,16 @@
  
   {{ with site.GetPage "sections/homepage_logos" }}
 
-  <section class="container-smallish pb-8">
+
+  <section class="container-smallish pb-12">
+
+ <h2 class="pt-8 pb-4 text-3xl text-center text-text-green font-secondary tracking-wider">Partners</h2>
     <div class="flex flex-wrap justify-center items-center">
+
+
     {{ range $i, $e:= .Params.logos }}
-      {{ partial "image" (dict "Src" .image "Alt" .name "Size" .size "Class" "mx-3 mt-8") }}
+    <a href="{{ .link }}">
+      {{ partial "image" (dict "Src" .image "Alt" .name "Size" .size "Class" "mx-3 mt-8") }}</a>
     {{ end }}
     </div>
   </section>
