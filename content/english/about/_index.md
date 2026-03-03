@@ -36,11 +36,11 @@ contentblocks:
       
       - Dil Green of [Mutual Credit Services](https://www.mutualcredit.services/) and [Local Loop Merseyside (LLM)](https://localloop-merseyside.co.uk/). 
       
-      - Michel Rauchs of Commons Lab and the [Centre for Alternative Finance](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/) at Cambridge University.
+      - Michel Rauchs of [Commons Lab](https://commonslab.org.uk) and the [Centre for Alternative Finance](https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/) at Cambridge University.
       
       - Amrit Sachar of the [Festival of Commoning](https://festival-of-commoning.org/).
       
-      - Chikara Shimasaki of [Stroud Commons](https://stroudcommons.org/) and Commons Lab.
+      - Chikara Shimasaki of [Stroud Commons](https://stroudcommons.org/) and [Commons Lab](https://commonslab.org.uk).
       
       - Matthew Slater of the Credit Commons Protocol.
       
