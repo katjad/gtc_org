@@ -22,7 +22,7 @@ logos:
       size: "60x60"
       link: "https://festival-of-commoning.org/"
     - name: Bristol Commons
-      image: "logo_bristolc_s.png"
+      image: "/images/logo_bristolc_s.png"
       size: "60x60"
       link: "https://thebristolcommons.org"
     - name: Open Food Network
