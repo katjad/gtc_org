@@ -29,6 +29,10 @@ logos:
       image: "/images/logo_ofn_s.png"
       size: "144x50"
       link: "https://openfoodnetwork.org.uk/"
+    - name: Commons Lab
+      image: "/images/logo_commonslab_s.png"
+      size: "232x75"
+      link: "htps://commonslab.org.uk"
     - name: Credit Commons Society
       image: "/images/logo_cc_s.png"
       size: "165x80"
