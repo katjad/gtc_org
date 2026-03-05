@@ -42,7 +42,7 @@ contentblocks:
       
       - Chikara Shimasaki of [Stroud Commons](https://stroudcommons.org/) and [Commons Lab](https://commonslab.org.uk).
       
-      - Matthew Slater of the Credit Commons Protocol.
+      - Matthew Slater of the Credit Commons Protocol and [Community Forge](https://communityforge.net/).
       
       - Nick Weir of the [Open Food Network](https://openfoodnetwork.org.uk/).
       
